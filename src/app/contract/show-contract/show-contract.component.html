@@ -1,0 +1,31 @@
+<div class="container">
+    <form [formGroup]="dateForm" (ngSubmit)="getContractByDate()">
+        <h3 class="m-3">Seleccione una fecha</h3>
+        <div class="d-flex">
+            <div class="mx-3">
+                <label for="fechaInicio" class="mx-1">Fecha inicio:</label>
+                <input type="date" id="fechaInicio" name="fechaInicio" formControlName="fechaInicio">
+            </div>
+            <div class="mx-3">
+                <label for="fechaFin" class="mx-1">Fecha Fin:</label>
+                <input type="date" id="fechaFin" name="fechaFin"  formControlName="fechaFin">
+            </div>
+            <input class="btn btn-primary btn-sm" type="submit" value="Enviar">
+        </div>
+    </form>
+</div>
+
+<div class="table-responsive container">
+    <table class="table">
+        <thead>
+            <th>Nombre de cliente</th>
+            <th>Monto total</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of contractList|async">
+                <td>{{item.nombreCliente}}</td>
+                <td>{{item.monto}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
