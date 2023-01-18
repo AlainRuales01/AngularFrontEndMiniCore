@@ -14,7 +14,7 @@ Esta API se encuentra en el siguiente enlace https://github.com/AlainRuales01/Mi
 
 ![image](https://user-images.githubusercontent.com/87552871/213068365-0e23066e-6668-46b2-b3b4-7bd157d54f39.png)
 
-#Deploy en la nube
+# Deploy en la nube
 Actualmente, este proyecto se encuentra deployado en la plataforma de Netlify. Para poder lograr esto se siguió la siguiente guía: https://www.youtube.com/watch?v=3VVPk7YYpho
 
 Enlace front: https://arminicorefront.netlify.app/
